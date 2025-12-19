@@ -1,0 +1,193 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1182,2312" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,2247" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="CityName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="484,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the city" Title="Input Box">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[CityName]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="484,1857" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="90701f28-05dd-48ca-a5ca-d9f75c4505ec" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1640" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Temp" />
+              <Variable x:TypeArguments="x:String" Name="Precipitation" />
+              <Variable x:TypeArguments="x:String" Name="humidity" />
+              <Variable x:TypeArguments="x:String" Name="Wind" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="165, 59, 1545, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Bhargav' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Bhargav' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="b8b35e09-aa65-4bd5-94d3-8fcb3e9c82b8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABg0AAAAcCAYAAABS1P8BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT7SURBVHhe7d1LUhs7FADQ7C2ZZQG8rIxJZmyCTDJ7YxiwAhc7CIw75f64pauPbWJTBh9VnSpwq6XbMqN7W+LL92//DQAAAAAAAF/iBwAAAAAAwHXqFw2+Lj/flNcAAAAAAIAPYs7z7/L+dfWiwZ6bAAAAAACAD6xRB6gUDX4UnQAAAAAAgM+mrAfkRYNGZQEAAAAAAPiEQl2gstMAAAAAAAC4RmvRwC4DAAAAAAC4Pkl9wE4DAAAAAABglBQNbobv3+6Gxz9D0l6Hx9vypnP6+fA6DJvfxef7/NqkcU9tc1/2O5e3xn1V7p+H4c/T8DN+fvs0vAzPw6+0X2gvD3ft/gAAAAAA/INtfWD6OSka/B62efcs0X77NDy+Y+J96/jk+xR3cc/9c55oPrPj4z6tbdHkPZ/3TY4pGqT9xuvJ32bsDwAAAADASaxFgwtJxB6bfL+UZPmxcZ/apaxDVywGLOLfXqVf9nyxPwAAAAAAJ9HfaRBlx8bkRxeNSfOkreNMRx5tHqa3xddkcDgKaf58Sb6nxw01k+HHJI/jkTdFgn/esbBrcdw83s39tv+6BkXRoLNWpd7crfWrxzXO9X9lXca1muJYYs2+s7geB8cf54/rFsYs4q98j5V+igYAAAAAAOeX/yPk+RiYauJ3TCK3Ert3w+NmTfKOyehYHMiSwNNnaTHg10NSNEiLDuO8jaR1JblcVYwR55+S9mk8tWfI4h2z/I2iQXetosPmbt+/xrOOMRcakgJQGt+yxrH/7vdj4r99GjatcaLWOLEIEPvFeGJ/AAAAAABOIi8aLJa3zJO3z8vjb7YJ4kYyP0vqlgnsIimcKN7Yr93fGSf7h8jzOGXs4d7KOFMyf36+apK6vdOgnK+zVvvm7j1/opgzGzcfo1zjvH8xVi/+oDp2ZY7s87i+y99f+B6b/QEAAAAAOIl60WCUvjU+v+1eafmOgLS1iwa9xHJ5rbx/p5M8Xsdp3J/cW84Z5q0mu1tFgwPWqhpnY+5W/EGZ6A9FjyT+6py7PsfFv8ydd4zPM6uuYxlf3q9ybFbnewcAAAAA4O06RYPy7flW0rhIBr/XToPOtRh7sdMgTVRX40nerh8LIiFJPT5jrWiwZ62ifXN3njFVe8bls21sxfFHMbEfdhrsmy/O0R170Ur2xzWo/e54IgAAAACAs1uLBtnZ9FvpToNK4jYRE8Xj772iQeUc/+x/GhxcNFgSyGXCPBtnjP1f/qdBeX16u75eNOitVakcO597z/PPYvJ+NBZGXosE+/T9pOsR3uY/OP4Y27xLoVU0qF6v7CSIRYNlvZf7FA0AAAAAAM4i2WkwJW/TFpPQU7I5aSGpvrSXzXN/p0HlniUhfHTRoDbW2EJSeUyEry0+WzFGfPt/Lk4sbXPfOp4o+T1tcbyD5z7k+dP4yuJITOJPsT5N1+YW1+Pg+LN1fR02m/j9RXNMSSuerVI0yIor4buYmiICAAAAAMDb3Ox+7h5PRMeHeNu9XnCIBQ4AAAAAANhaiwZfy4u01N/gvzT5MUfh8wuPHQAAAACAd5LUB+w0OEh5pM5FJ913x/fUd0IoGgAAAAAAUJMXDew2AAAAAACA6xHqApWdBj/KmwAAAAAAgE+mrAdUigZlZQEAAAAAAPhEGnWAetGguOmmvAYAAAAAAHwQc56/USxY9IsGAAAAAADA1VA0AAAAAAAARn8BHIwiFBoqxAoAAAAASUVORK5CYII=" InformativeScreenshot="5d184680ab578416237f767d29ccb918.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" Text="[CityName+&quot;  weather[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="165, 59, 1545, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Bhargav' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Bhargav' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="a438033c-2284-4809-a23b-83d65c07c2ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABg0AAAAcCAYAAABS1P8BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD8SURBVHhe7dkxDQAgAMAwpECCf4uQ7MQCPfrMwsZc+wAAAAAAAIw3AAAAAAAAfzINAAAAAACAmAYAAAAAAEBMAwAAAAAAIKYBAAAAAAAQ0wAAAAAAAIhpAAAAAAAAxDQAAAAAAABiGgAAAAAAADENAAAAAACAmAYAAAAAAEBMAwAAAAAAIKYBAAAAAAAQ0wAAAAAAAIhpAAAAAAAAxDQAAAAAAABiGgAAAAAAADENAAAAAACAmAYAAAAAAEBMAwAAAAAAIKYBAAAAAAAQ0wAAAAAAAIhpAAAAAAAAxDQAAAAAAABiGgAAAAAAADENAAAAAACAmAYAAAAAAEAuozGn9qiWb5sAAAAASUVORK5CYII=" InformativeScreenshot="62dd0f961161a28f98602d60643a977a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text '°C'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" TextString="[Temp]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+weather&amp;rlz=1C1VDKB_enIN1130IN1130&amp;oq=bangalre&amp;gs_lcrp=EgZjaHJvbWUqEAgBEAAYkQIYsQMYgAQYigUyBggAEEUYOTIQCAEQABiRAhixAxiABBiKBTIQCAIQABiRAhixAxiABBiKBTIQCAMQABiRAhixAxiABBiKBTINCAQQABiRAhiABBiKBTINCAUQABiRAhiABBiKBTIMCAYQLhgKGLEDGIAEMgkIBxAAGAoYgAQyDAgIEC4YChixAxiABDISCAkQABgKGIMBGLEDGIAEGIoF0gEIMzU5OWowajeoAgiwAgHxBUAJkxWWtSjd&amp;sourceid=chrome&amp;ie=UTF-8" CvTextArea="307, 413, 52, 38" CvType="AnyWordGroup" DesignTimeRectangle="308, 403, 51, 60" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'27'" FullSelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' type='' class='wob_t q8U8x' /&gt;" Guid="b658c53d-6e59-4e5c-b9e5-0394d872d4c0" InformativeScreenshot="f24d1139c1c62e503438b152d61fdcdc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore weather - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="364, 414, 19, 15" CvTextArgument="°C" CvType="Text" DesignTimeRectangle="365, 414, 18, 17" ElementType="Text" FriendlyName="'°C'" FullSelectorArgument="&lt;webctrl aria-label='°Celsius' aria-role='button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='°Celsius' aria-role='button' tag='SPAN' type='' class='wob_t' aaname='°C' check:innerText='°C' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVEhLY5CXl/9PC8yALkAtPMQNrtr24P+LV2/B+Pa2GgzF8vJz/5+AyuNXh2xw5Y7/t+/u+F8F5tf833L3wf8tlZiWnpiLxSK4PlINBslhGIoqh+5yooJi1insroLgmv+z5mIGBxGRB3I9posIYSIMhoTjUDKYZkFBKPKwyxNlMMXJDR8mP4MQg6GuIy1LUxmPGgzHNDMYAG128aOf5n59AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Precipitation: 5%'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" TextString="[Precipitation]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+weather&amp;rlz=1C1VDKB_enIN1130IN1130&amp;oq=bangalre&amp;gs_lcrp=EgZjaHJvbWUqEAgBEAAYkQIYsQMYgAQYigUyBggAEEUYOTIQCAEQABiRAhixAxiABBiKBTIQCAIQABiRAhixAxiABBiKBTIQCAMQABiRAhixAxiABBiKBTINCAQQABiRAhiABBiKBTINCAUQABiRAhiABBiKBTIMCAYQLhgKGLEDGIAEMgkIBxAAGAoYgAQyDAgIEC4YChixAxiABDISCAkQABgKGIMBGLEDGIAEGIoF0gEIMzU5OWowajeoAgiwAgHxBUAJkxWWtSjd&amp;sourceid=chrome&amp;ie=UTF-8" DesignTimeRectangle="488, 412, 17, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'5%'" FullSelectorArgument="&lt;webctrl id='wob_pp' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_pp' tag='SPAN' type='' class='' /&gt;" Guid="b3fdbfea-cd1e-4492-a859-6a145b9d2707" InformativeScreenshot="97a044b2dfdaf4a342314ea235bbf874.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore weather - Google Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="415, 412, 91, 14" CvTextArgument="Precipitation: 5%" CvType="Text" DesignTimeRectangle="416, 411, 90, 16" FriendlyName="'Precipitation: 5%'" FullSelectorArgument="&lt;webctrl aaname='Precipitation: ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Precipitation: ' parentid='wob_wc' tag='DIV' type='' class='' check:innerText='Precipitation: 5%' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAUCAYAAAAEEYpkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIOSURBVFhH7ZfbccMgEEXdiQpRGVYTcg9yCZSgVsnwvnsXZMV2xEf4uJMMLCx79hHlNk2THbpeN14YukYDfCcN8J00wHdSAT+v1uy73UnmMatD72p5nrjvvtndrHaeJjs/jN2fi7YhCTs4z3afa7Gb4GPsOsc955fXYszbne9R4OWh4IjXrtNb4P9SntFmF16fZruayMklIL3F2TeK4AV4d2HMmK8kE7oiXZazDGtRHgZ1Ta74GMCabahy3F14dwwE78xn2I4q3vnkd+S4ntpHG+5RN7kCjWcAdqvanY7B45oPEPaFfQik3u6layR4AorJrI0a778A8UDxfMV3SBQA2ROI+F5RQFx0WjLxnEiqeOfvoAtfzvicMQpcwEr7kOnaLJfgMVAYaQyu8Xjca4Hnd5RkBfBl79xIxWTLRGLnOUYpETHB2FFRxxWPojbj7EunZ8BjO58BD0HQeKiD1+8odjBC2T/HfSCRCFSq+vQTOyLafAa+5rRSaWqdffFIq4DnDlN7Crx+B1f8N8DrOAtk9y78+4bz/m3wbO+DQmDZNnyCOac849OjhP0p8PGz7gX40JXtGf878HSmxStXOf7+xYrPa2LMlD2fiLiHWcdRs2UbOIt+0v3+8fgNvdmlZUfvrL1DQUTwagyi5He8/mLhBJbxyJ3R5z/Xw+D+hwb4TuoDfmiA76UBvpMG+E76AfE6oh8jO4U8AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Humidity: 65%'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" TextString="[humidity]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+weather&amp;rlz=1C1VDKB_enIN1130IN1130&amp;oq=bangalre&amp;gs_lcrp=EgZjaHJvbWUqEAgBEAAYkQIYsQMYgAQYigUyBggAEEUYOTIQCAEQABiRAhixAxiABBiKBTIQCAIQABiRAhixAxiABBiKBTIQCAMQABiRAhixAxiABBiKBTINCAQQABiRAhiABBiKBTINCAUQABiRAhiABBiKBTIMCAYQLhgKGLEDGIAEMgkIBxAAGAoYgAQyDAgIEC4YChixAxiABDISCAkQABgKGIMBGLEDGIAEGIoF0gEIMzU5OWowajeoAgiwAgHxBUAJkxWWtSjd&amp;sourceid=chrome&amp;ie=UTF-8" CvTextArea="468, 428, 25, 12" CvType="AnyWordGroup" DesignTimeRectangle="469, 428, 24, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'65%'" FullSelectorArgument="&lt;webctrl id='wob_hm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_hm' tag='SPAN' type='' class='' /&gt;" Guid="94e3ee1b-f4d0-4458-bf7f-ce9068ded04e" InformativeScreenshot="53fc0e3c4f92f9ac3d89e9ece6c66be3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore weather - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="415, 428, 50, 14" CvTextArgument="Humidity:" CvType="Text" DesignTimeRectangle="416, 427, 90, 16" FriendlyName="'Humidity: 65%'" FullSelectorArgument="&lt;webctrl aaname='Humidity: ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Humidity: ' parentid='wob_wc' tag='DIV' type='' class='' check:innerText='Humidity: 65%' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAUCAYAAAAEEYpkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHpSURBVFhH7ZftrcMgDEW7SQZhiqpZguxAR8gIrOonIBjbkDzyoaBU/LhSSx1sHxuHvoZhgK779ZILXfeog2+kDr6ROvhGSuCVhtnOoBU3GL8W5kllDx6S92FglOvDAGqawc4aFPM5ginEtE9uDwvWi+/l/IT1IMzTxxnWzCfZuxivYnEv+A1R8Gn9LHgFeibxfwzxEX6jYKNczn7dMUF7F0u5aY5oF3heBBL40snawcPOIp32HYkPErwDsdibr+z4t98f93vL05JA+KJFH1QMnNRaUV1ecZ37uLIBLwTP7fBY030p+OWZ0HFhr+1RIzrUFa0Em8rbaF7AmB8ZJ16kQHnHj2BWC3hMAjyfeXL2bYNPSfEOJPAoeHbs+fcyeN51CKeQFGo5UdGOjTP/WzxBS+HZyUyFir7wnXBBES7s+DQGasBnM70CPOvAmnkri7uSI9qW9ow+0Xdl0f/RCfBhhh8Fn0GpAR/n71QxZpxEXGs5Sv90HSGT0XbFvN8Nnh/VE+Bp4apmPNlbXPPWxd8LNH4eo7j9RJEup59v7/gIK9xUwkvrOHh6q7FgJp5Y8LkURI4bMRJWbzUyZvEczmyfj3w+v26ifWa7X4/757oN+Tl6FPjQcYUX4AP1KPC/pA6+kTr4RurgG+kPe3dl3jkh7XIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Wind: 13 km/h8 mph'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" TextString="[Wind]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=bangalore+weather&amp;rlz=1C1VDKB_enIN1130IN1130&amp;oq=bangalre&amp;gs_lcrp=EgZjaHJvbWUqEAgBEAAYkQIYsQMYgAQYigUyBggAEEUYOTIQCAEQABiRAhixAxiABBiKBTIQCAIQABiRAhixAxiABBiKBTIQCAMQABiRAhixAxiABBiKBTINCAQQABiRAhiABBiKBTINCAUQABiRAhiABBiKBTIMCAYQLhgKGLEDGIAEMgkIBxAAGAoYgAQyDAgIEC4YChixAxiABDISCAkQABgKGIMBGLEDGIAEGIoF0gEIMzU5OWowajeoAgiwAgHxBUAJkxWWtSjd&amp;sourceid=chrome&amp;ie=UTF-8" CvTextArea="449, 444, 43, 12" CvType="AnyWordGroup" DesignTimeRectangle="450, 444, 43, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'13 km/h'" FullSelectorArgument="&lt;webctrl id='wob_ws' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_ws' tag='SPAN' type='' class='wob_t' /&gt;" Guid="ad63a23f-bbba-4433-8799-ce98177b38f7" InformativeScreenshot="9e6204ca1f3f6103ab59c1886b324753.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='bangalore weather - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="414, 444, 32, 12" CvTextArgument="Wind:" CvType="Text" DesignTimeRectangle="416, 443, 90, 16" FriendlyName="'Wind: 13 km/h8 mph'" FullSelectorArgument="&lt;webctrl aaname='Wind: ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Wind: ' parentid='wob_wc' tag='DIV' type='' class='' check:innerText='Wind: 13 km/h' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAUCAYAAAAEEYpkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH/SURBVFhH7ZfdlYQgDIWnkynEMsYmmB6wBEqg1ewJCCaBII5n5YWHe1zlL/cjZNjX+/2Gqef1kh+mntEEP0gT/CBN8IO0g1/AOA/2Qxo/FryvfbOwLgYcPisT6opruO9Saatr3WT/Faz3IS7vHZilHFMf94PQozOwoGd8yvabyhkvg12+Dpxz4LeVfaPv13QNPMaDgGl//JYTISWBMrZ3HU3Z63+D5wsgJAfmwzM7G6cZH8ZZsK6eiQlg6hOBYOZqGRs3CE23AepzsHEh1hh3/G6OU7OtEbASd/C6czHJh7LZV0VqPBpJk6a/9w0IARGjEnwuSQc0nDOa2vvtAHSQpZrgezJelMSYBDyeFGtoy6eZsGj4uyMCntR5XIzAyybSiSjAH+ZoOZLg5PuZ6v13841NPDK7zGIO92hnZZSe/oa/O2K3mgQZn6yWplqXFpTgSQ08Aitreh2krnb/cn46DmGZlDTV+XTwOdmwn+pPxnNN/DqJQDdDygtqBesMrHQzusBLo+X7mc768wyujeNw+8DT8tr2d0fiHo+Q8TZDf8UxEAt2I/W0Ezw7prdrvLzyxqslu+5WxumJoICXV+WWvxsq/oGqZVFYjG5GL/h87OXR128kMha+UfQeL9u0cceGdYGnJRV14u9XFeCnntEEP0gT/CBN8IM0wQ/SBD9If1dcPxaDmz4TAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="90701f28-05dd-48ca-a5ca-d9f75c4505ec" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1882, 8, 46, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='bangalore weather - Google Search - Google Chrome - Bhargav' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='bangalore weather - Google Search - Google Chrome - Bhargav' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="8574c6ea-0012-467a-90b4-0e97041fcde9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAsCAYAAAAn4+taAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADkSURBVGhD7dMxCsJAEIXhXEob0S6iIEIQrCRYiY1iZW9j5wUsbLybeouRFUbiZgMSdpYXeAM/gUmTj+xmGQdspOPzhQx7E+lqhKBFCFqEoEUIWoSgRQhahPzT8/GS2/Ve22v77fHzAf6+TaaQ8+nSiFGEe/rv2mQKcYUwsREuc4irirFAuJJAXIqxQLiSQfRP+McsVkkg1eMUujMxMoeE7oQFxhQSQmixMaaQJoSmGH/fJlNIyghBixC0CEGLELQIQYsQtAhB6wdSLg6C3KrYyXK2kWK8lnxQdBfiN89LGfWnNcgb83vBas+RDh0AAAAASUVORK5CYII=" InformativeScreenshot="aee3b5b36361aec8e30e22fc5db4d322.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='bangalore weather - Google Search - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[CityName+&quot;weather&quot; + Environment.NewLine +&quot;Temperature &quot;+Temp +&quot;C&quot;+ Environment.NewLine +&quot;Precipitation :&quot;+Precipitation + Environment.NewLine +&quot;Humidity :&quot;+humidity + Environment.NewLine +&quot;Wind :&quot;+Wind]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="758d70a452d9c48510bf7c088cc7995b.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
