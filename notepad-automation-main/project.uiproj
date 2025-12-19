@@ -1,0 +1,6 @@
+{
+  "Name": "Notepad_Automation",
+  "ProjectType": "Process",
+  "Description": "Automates writing a content in notepad and saves it\r\n",
+  "MainFile": "Main.xaml"
+}
