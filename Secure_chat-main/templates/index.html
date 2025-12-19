@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Chat</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <header class="brand">
+            <h1>Secure Chat</h1>
+            <p class="tag">Share this link. Everyone picks a username to join.</p>
+        </header>
+
+        <section class="panel">
+            <div class="panel-header">
+                <h2>Identity</h2>
+            </div>
+            <label for="username" class="label">Pick a username</label>
+            <div class="identity-row">
+                <input id="username" type="text" placeholder="surname" autocomplete="off">
+                <button id="join-btn" type="button">Join chat</button>
+            </div>
+            <div class="fingerprint-box">
+                <div class="label">Fingerprint</div>
+                <div id="self-fingerprint" class="fingerprint">Not joined</div>
+            </div>
+            <button id="leave-btn" type="button" class="ghost danger" disabled>Leave chat</button>
+        </section>
+
+        <section class="panel participants">
+            <div class="panel-header">
+                <h2>People online</h2>
+                <button id="refresh-participants" type="button" class="ghost small">Refresh</button>
+            </div>
+            <p class="hint" id="participant-hint">Join to see who is connected.</p>
+            <ul id="participant-list" class="participant-list"></ul>
+            <div class="count"><span id="participant-count">0</span> online</div>
+        </section>
+
+        <section class="panel status">
+            <div class="panel-header">
+                <h2>Status</h2>
+            </div>
+            <p id="status">Connect with a username to start chatting.</p>
+            <div class="pill">RSA-2048 · AES-256-GCM · WebCrypto</div>
+        </section>
+    </aside>
+
+    <main class="conversation">
+        <header class="conversation-header">
+            <div>
+                <h2 id="conversation-title">Secure Chat</h2>
+                <p id="conversation-subtitle">Anyone with this link can join.</p>
+            </div>
+        </header>
+
+        <div id="chat-log" class="chat-log"></div>
+
+        <footer class="composer">
+            <div class="composer-row">
+                <input id="message" type="text" placeholder="Type an encrypted message" autocomplete="off" disabled>
+                <button id="send-btn" type="button" disabled>Send</button>
+            </div>
+            <small class="composer-hint">Messages stay encrypted between connected browsers.</small>
+        </footer>
+    </main>
+</div>
+
+<template id="message-template">
+    <div class="message-bubble">
+        <div class="meta"></div>
+        <div class="body"></div>
+    </div>
+</template>
+
+<script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
